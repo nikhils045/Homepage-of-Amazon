@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  height: 60px;
+  min-height: 30px;
   width: 100%;
   background-color: #131a22;
   color: white;
@@ -137,7 +137,7 @@ span {
 
 /* panel */
 .panel {
-  height: 40px;
+  min-height: 25px;
   width: 100%;
   background-color: #222f3d;
   display: flex;
@@ -190,12 +190,14 @@ span {
 .hero-msg {
   background-color: white;
   color: black;
-  height: 40px;
+  min-height: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 0.85rem;
-  width: 80%;
+  min-width: 80%;
+  padding: 9px;
   margin-bottom: 25px;
 }
 
@@ -255,9 +257,10 @@ span {
 
 /* Footer Section */
 .foot-panel1 {
-  background-color: #37475a;
+  background-color: hsl(213, 24%, 28%);
   color: white;
-  height: 50px;
+  min-height: 23px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +275,7 @@ span {
 .foot-panel2 {
   background-color: #222f3d;
   color: white;
-  height: 300px;
+  min-height: 280px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -306,7 +309,7 @@ ul a {
   background-color: #222f3d;
   color: white;
   border-top: 0.5px solid white;
-  height: 70px;
+  min-height: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,7 +325,7 @@ ul a {
 .foot-panel4 {
   background-color: #131a22;
   color: white;
-  height: 80px;
+  min-height: 75px;
   font-size: 0.8rem;
   text-align: center;
 }
@@ -353,25 +356,17 @@ ul a {
   .navbar p {
     font-size: 0.8rem;
   }
-
   .nav-address,
   .nav-signin,
   .nav-returns {
     padding: 5px 8px;
   }
-
-  .hero-msg {
-    width: 90%;
-  }
-
   .box {
     width: 24%;
   }
-
   .box-img {
     background-position: center;
   }
-
   .box-content {
     margin: 0 0.5rem;
   }
@@ -391,23 +386,27 @@ ul a {
   .panel-ops p {
     padding: 0;
   }
+  .hero-section {
+    background-position: 44% center;
+  }
 
   .hero-msg {
     display: flex;
     flex-direction: column;
+    font-size: 0.85rem;
   }
 
   .box {
     width: 32%;
+  }
+  .foot-panel2 ul {
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 430px) {
   * {
     font-size: 0.7rem;
-  }
-  .navbar {
-    height: 30px;
   }
   .nav-logo {
     height: 40px;
@@ -448,12 +447,6 @@ ul a {
   .nav-cart {
     padding: 4px;
   }
-  .panel {
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .panel-all {
     padding: 0;
     display: flex;
@@ -479,11 +472,9 @@ ul a {
     height: 150px;
   }
   .hero-msg {
-    max-height: 30px;
-    min-width: min-content;
-    padding: 1px 1px 3px 3px;
     margin-bottom: 15px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
+    padding: 4px;
   }
 
   .box {
@@ -499,24 +490,19 @@ ul a {
     height: 180px;
   }
   .foot-panel1 {
-    height: 35px;
     font-size: 0.75rem;
   }
   .foot-panel2 {
-    height: 190px;
+    min-height: 200px;
+  }
+  .foot-panel4 {
+    min-height: 50px;
   }
   ul {
     margin-top: 15px;
-    padding-left: 15px;
   }
   ul a {
     margin-top: 5px;
-  }
-  .foot-panel3 {
-    height: 40px;
-  }
-  .foot-panel4 {
-    height: 50px;
   }
   .pages {
     padding-top: 15px;
@@ -535,7 +521,7 @@ ul a {
     width: 35px;
   }
   .nav-signin {
-    width: 140px;
+    width: 149px;
   }
   .panel-ops {
     width: 65%;
@@ -547,11 +533,14 @@ ul a {
     margin-left: 8px;
   }
   .hero-msg {
-    height: 20px;
     font-size: 0.6rem;
   }
   .box {
     height: 235px;
+  }
+  .foot-panel2 p,
+  ul a {
+    font-size: 0.8rem;
   }
 }
 
@@ -578,17 +567,11 @@ ul a {
   .hero-section {
     height: 125px;
   }
-  .hero-msg {
-    height: 15px;
-  }
   .box {
     height: 200px;
   }
   .box-img {
     height: 150px;
-  }
-  .foot-panel1 {
-    height: 25px;
   }
   .foot-panel2 p,
   ul a {
@@ -596,15 +579,6 @@ ul a {
   }
   ul {
     margin-top: 10px;
-  }
-  .foot-panel2 {
-    height: 170px;
-  }
-  .foot-panel3 {
-    height: 26px;
-  }
-  .foot-panel4 {
-    height: 40px;
   }
   .pages {
     padding-top: 10px;
